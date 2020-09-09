@@ -4,8 +4,13 @@
   "description": "The project is intended to serve as a base for future three.js projects",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel src/index.html --port 8080 --open"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.8.1",
+    "eslint-config-google": "^0.14.0",
+    "parcel-bundler": "1.12.4"
+  }
 }
