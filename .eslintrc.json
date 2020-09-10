@@ -11,6 +11,9 @@
         "sourceType": "module"
     },
     "rules": {
-      "quotes": ["error", "single"]
+      "quotes": ["error", "single"],
+      "require-jsdoc": "off",
+      "object-curly-newline": "error",
+      "object-curly-spacing": "error",
     }
 }

@@ -1,4 +1,5 @@
 import * as THREE from '../../assets/three.module';
+import { updateCameraAspect } from './utils/camera.utils';
 
 (() => {
   const canvas = document.querySelector('#canvas');
@@ -14,6 +15,7 @@ import * as THREE from '../../assets/three.module';
   scene.add(cube);
 
   const animate = () => {
+    updateCameraAspect(camera, renderer);
     cube.rotation.y += 0.02;
     renderer.render(scene, camera);
 
